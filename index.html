@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drop Down</title>
+</head>
+<link rel="stylesheet" href="multiple-select.css" type="text/css" />
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/js/bootstrap.js"></script>
+
+<script src="multiple-select.js" type="text/javascript" ></script>
+<script type="text/javascript">
+$(function(){
+	$('#users').multipleSelect({
+		filter: true,
+		placeholder: "User"
+	});
+});
+</script>
+<body>
+<select id="users" multiple name="users[]" class="w-lg"  style="width: 50%">
+<option value="surat">Surat</option>
+<option value="Jaipur">Jaipur</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Kolkatta">Kolkatta</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Bengluru">Bengluru</option>
+<option value="Chennai">Chennai</option>
+</select> 
+
+</body>
+</html>
